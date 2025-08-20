@@ -2,14 +2,13 @@
 // otherwise you have to use `require` instead of import
 import express from "express";
 // const express = require("express"); This is the require syntax; it's the same thing
-import noteRoutes from "./routes/noteRoutes.js";
+import blogRoutes from "./routes/blogRoutes.js";
 
-// initialize an instance of Express.js
+// initialise an instance of Express.js
 const app = express();
 
-app.use("/api/notes", noteRoutes);
+app.use("/api/blogs", blogRoutes);
 
 app.listen(5001, () => {
-  console.log("Server started on PORT: 5001");
-  console.log("localhost:5001/api/notes");
+  console.log("Server started on PORT: 5001 localhost:5001/api/blogs");
 });
