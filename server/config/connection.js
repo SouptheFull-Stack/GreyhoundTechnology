@@ -1,3 +1,13 @@
-import mongoose from "mongoose";
+import { Pool } from "pg";
 
-mongoose.connect("mongodb://127.0.0.1:27017/test");
+const pool = new Pool(
+  {
+    user: '',
+    password: '',
+    host: 'localhost',
+    database: 'greyhound_technology_db'
+  },
+  console.log("Connected to the database!")
+)
+
+export default pool;
