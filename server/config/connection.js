@@ -2,8 +2,8 @@ import { Pool } from "pg";
 
 const pool = new Pool(
   {
-    user: '',
-    password: '',
+    user: 'postgres',
+    password: 'postgres',
     host: 'localhost',
     database: 'greyhound_technology_db'
   }
