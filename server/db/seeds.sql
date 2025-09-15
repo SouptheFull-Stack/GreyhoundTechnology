@@ -24,7 +24,8 @@
 INSERT INTO adminUser (username, first_name, last_name, bio) VALUES
 ('mitra', 'Mitra', 'Ahmadi', 'Full-stack dev and violin teacher'),
 ('alex99', 'Alex', 'Smith', 'Tech blogger and gamer'),
-('sara_dev', 'Sara', 'Lee', 'Frontend developer and coffee lover');
+('sara_dev', 'Sara', 'Lee', 'Frontend developer and coffee lover'),
+('danny', 'Dan', 'Darko', 'Crypto bro');
 
 -- Blogs
 INSERT INTO blog (title, author_id, content, date_created) VALUES

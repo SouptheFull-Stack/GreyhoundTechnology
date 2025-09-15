@@ -21,7 +21,7 @@ CREATE TABLE adminUser (
 CREATE TABLE blog (
     id SERIAL PRIMARY KEY,
     title VARCHAR(80),
-    author_id INTEGER,
+    author_id INTEGER NOT NULL,
     FOREIGN KEY (author_id) REFERENCES adminUser(id),
     content TEXT NOT NULL,
     category_id INTEGER,
@@ -36,7 +36,7 @@ CREATE TABLE category (
     FOREIGN KEY (blog_id) REFERENCES blog(id)
 );
 
-CREATE TABLE blogcategory (
+CREATE TABLE blogCategory (
     id SERIAL PRIMARY KEY,
     blog_id INTEGER,
     FOREIGN KEY (blog_id) REFERENCES blog(id),
